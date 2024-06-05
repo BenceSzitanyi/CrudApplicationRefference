@@ -1,0 +1,15 @@
+﻿<Window x:Class="GraphicCrud.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GraphicCrud"
+        mc:Ignorable="d"
+        Title="Video Game Shop" Height="450" Width="800">
+    <Grid>
+        <Label Content="Video Game Shop Database Editor" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="20" Margin="0,12,0,0"/>
+        <Button x:Name="GameButton" Content="Games" Margin="69,76,69,289" FontSize="20" Click="GameButton_Click"/>
+        <Button x:Name="PublisherButton" Content="Publishers" Margin="69,178,69,188" FontSize="20" Click="PublisherButton_Click"/>
+        <Button x:Name="DeveloperButton" Content="Developers" Margin="69,285,69,81" FontSize="20" Click="DeveloperButton_Click"/>
+    </Grid>
+</Window>

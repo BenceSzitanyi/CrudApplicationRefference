@@ -1,0 +1,29 @@
+﻿<Window x:Class="GraphicCrud.GetDevelopersWithMostGames"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GraphicCrud"
+        mc:Ignorable="d"
+        Title="GetDevelopersWithMostGames" Height="450" Width="800">
+    <Window.DataContext>
+        <local:GetDevelopersWithMostGamesViewModel/>
+    </Window.DataContext>
+    <Grid>
+        <ListBox ItemsSource="{Binding TopThreeDevelopers}">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <Label>
+                        <TextBlock>
+                <Run Text="Id: "/>
+                <Run Text="{Binding DeveloperId}"/>
+                <Run Text="&#x9;"/>
+                <Run Text="Name: "/>
+                <Run Text="{Binding DeveloperName}"/>
+                        </TextBlock>
+                    </Label>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+    </Grid>
+</Window>
